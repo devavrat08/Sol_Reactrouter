@@ -1,0 +1,25 @@
+In single page application we have to used routing concept.
+
+Install react-router-dom
+
+import Route from 'react-router-dom'
+in app.jsx
+----use--
+<Route path="/products" component={Product}
+
+In navigation.jsx
+import {Link} from 'react-router-dom'
+
+Instead of <a href="#"> use <Link to="/products">
+
+In index.js
+import {BrowserRoute} from 'react-router-dom'
+
+use exact keyword for default page
+
+How to use props property in Routing?
+
+use render callback arrow fn
+eg <Route path="/products" render={(props)=><Product data={"React"} {...props}/>}/>
+
+
